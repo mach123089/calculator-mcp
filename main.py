@@ -1,5 +1,4 @@
 from mcp.server.fastmcp import FastMCP
-import math
 
 mcp = FastMCP("Basic operations with floats")
 
