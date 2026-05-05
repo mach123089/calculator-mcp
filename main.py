@@ -5,22 +5,22 @@ mcp = FastMCP("Advanced Calculator")
 
 # Existing tool definitions (unchanged)
 @mcp.tool()
-def add(a: int, b: int) -> int:
+def add(a: float, b: float) -> float:
     """Add two numbers"""
     return a + b
 
 @mcp.tool()
-def sub(a: int, b: int) -> int:
+def sub(a: float, b: float) -> float:
     """Subtract two numbers"""
     return a - b
 
 @mcp.tool()
-def mul(a: int, b: int) -> int:
+def mul(a: float, b: float) -> float:
     """Multiply two numbers"""
     return a * b
 
 @mcp.tool()
-def div(a: int, b: int) -> float:
+def div(a: float, b: float) -> float:
     """Divide two numbers (returns floating point result)"""
     if b == 0:
         raise ValueError("Cannot divide by zero")
